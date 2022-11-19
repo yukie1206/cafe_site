@@ -111,7 +111,7 @@ body{
 
 
 /* have a happy day */
-.title{
+.title_en{
     font-weight: normal;
     font-size: 30px;
     line-height: 3.86;
@@ -140,24 +140,28 @@ body{
     letter-spacing: 0.1em;
 }
 
+.re_title-detail{
+    display: none;
+}
+
 /* ABOUT US */
 .about_wrap{
     max-width: 1000px;
     margin: 0 auto;
-    margin-top: 90px;  
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 90px 10px 0px 10px;
 }
 
 /*about us 画像  */
 .photo{
-    width: 50%;
     border-bottom-right-radius: 80px;
 }
 
 .about{
-    padding-left: 70px;
+    padding-left: 7%;
+    width: 43%;
 }
 /* about us 赤ロゴ */
 .logo{
@@ -167,6 +171,14 @@ body{
 .messeage{
     font-size: 16px;
     line-height: 1.62;
+}
+
+.logo_2{
+    display: none;
+}
+
+.about_us_img{
+    width: 50%;
 }
 
 /* 私たちが提供する~ */
@@ -231,23 +243,17 @@ body{
 /* GALLERY */
 .gallery_wrap{
     text-align: center;
-
 }
 
+/* GALLERYのロゴ */
 .gallery_img{
     padding-top: 93px;
     width: 245px;
 }
-
-/* GALLERYのロゴ */
-.gallery{
-    padding-top: 20px;
+.gallery_photo img{
+    width: 100%;
 }
 
-.event_wrap{
-    max-width: 1000px;
-    margin: 0 auto;
-}
 
 .event_image{
     text-align: center;
@@ -260,6 +266,11 @@ body{
 }
 
 /* イベントの四角の中全体 */
+
+.event_wrap{
+    max-width: 1000px;
+    margin: 0 auto;
+}
 .event_text{
     margin: 0 auto;
     font-size: 23px;
@@ -268,21 +279,31 @@ body{
     background-color: #fff;
     box-sizing: border-box;
     margin-top: 40px;
-    padding: 40px 0 22px 0;
-    
+    padding: 40px 0px 22px 0;
+
+
 }
 
-/* 日付 */
-.date{
-    float: left;
-    padding: 0 45px 0 160px;
+.info_detail{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    margin-left: 11.5%;
+
 }
+
+
+
 
 /* 日付の内容 */
 .contents{
     margin-bottom: 18px;  
     text-decoration: underline;
+    margin-left: 42px;
+
+
 }
+
 
 .access_image{
     text-align: center;
@@ -310,6 +331,7 @@ footer{
     max-width: 1000px;
     margin: 0 auto;
     padding: 81px 0 75px 0;
+
     
 }
 
@@ -334,6 +356,23 @@ small{
 
 .info_text{
     padding-bottom: 80px;
+}
+
+/* スライダー調整 */
+.slick-dots{
+    bottom: 20px;
+}
+
+.slick-dots li.slick-active button:before{
+    color: #fff;    
+}
+
+.slick-dots li button:before{
+    color: #fff;    
+}
+
+.slick-dotted.slick-slider{
+    margin-bottom: 0;
 }
 
 @media screen  and (max-width:1100px) {
@@ -423,9 +462,9 @@ small{
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     }
 
-    /* ここから */
+
     .title_text{
-       font-size: 70px;
+       font-size: 60px;
     }
 
     .title_detail{
@@ -433,33 +472,243 @@ small{
     }
 
     .headline{
-        font-size: 30px;
+        font-size: 35px;
     }
 
-    /* イベントが崩れる？ */
+    .about_2{
+        width: 200px;
+    }
+
   
 }
 
 @media screen and (max-width:767px) {
 
-    
+    /* 赤色のpagetopボタン */
+    .PAGETOP{
+        width:26.66vw;
+        /* 100/375 */
+    }
 
+    /* ヘッダーロゴ */
+    .logo{
+        width: 49.8vw;
+        /* 187/375 計算方法要確認 */
+    }
+
+    /* ハンバーガーメニュー */
+    .sp_btn{
+        width: 8.5vw;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .title_en{
+        margin-top: 42px;
+        font-size:4.53vw;
+        /* 17/375 */
+    }
+
+    /* ヘッダー 　ハッピーに*/
+    .title_text{
+        font-size: 9vw;
+        /* 調整あり*/
+        margin-top: 27px;
+        line-height: 1.157;
+    }
+
+
+    .title_detail{
+        display: none;
+    }
+
+    .re_title-detail{
+        display: block;
+        font-size: 16px;
+        line-height: 1.875;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    /* ABOUT US */
     .about_wrap{
         display: block;
         width: 100%;
-        margin-right: 0;
+        margin: 0;
+    }
+
+    /* 私たちが提供する */
+  .headline{
+        font-size: 36px;
+        line-height: 1.25;
+        padding: 34px 3% 35px 3%;
+    }
+
+    .about_2{
+        display: none;
+    }
+
+    .about{
+        margin:0 auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .about_us_img{
+        display: block;
+        margin: 0 auto;
+        width: 100%;
     }
 
     .photo{
-        width: 100%;
         border-radius: 0;
         margin: 0;
     }
 
-    .logo{
-        display: none;
+    /* 2つ目のABOUT USのロゴ */
+    .logo_2{
+        display: block;
+        width:160px;
+        text-align: center;
+        padding-left: 0;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        margin-top: 60px;
     }
-    
+
+    .messeage{
+        line-height: 1.75;
+        font-size: 4.26vw;
+        padding: 0 3% 51px 3%;
+    }
+
+    /* menu */
+    .menu_wrap{
+        padding-left: 7%;
+        padding-right: 7%;
+    }
+
+    .menu_logo{
+        padding: 0;
+        width: 87px;
+    }
+
+
+
+    .menu ul{
+        display: block;  
+        padding-top: 23px;
+    }
+
+    .photo_3{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .explanation{
+        text-align: left;
+        margin: 0 auto;
+        width: 100%;
+        margin-bottom: 55px;
+        line-height: 1.58;
+    }
+
+    .title{
+        font-size: 40px;
+        line-height: 0.55;
+    }
+
+    /* EVENT */
+
+    .event_wrap{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .event_image{
+        padding-top: 0;
+    }
+
+    .event_text{
+        padding: 22px 0 0 0;
+    }
+
+    .contents{
+        margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .contents:last-child{
+        margin-bottom: 17px;
+    }
+
+
+    /* ACCESS */
+    .access_img{
+        padding-top: 32px;
+        padding-bottom: 13px;
+        width: 124px;
+    }
+
+    .map{
+        height: 0;
+        overflow: hidden;
+        padding-top: 51.2%;
+        /* 後ほどまとめる */
+        position: relative;
+    }
+
+    .map iframe {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* GALLERY */
+    .gallery_img{
+        width:142px;
+        padding-top: 0;
+    }
+
+    /* EVENT */
+    .event_img{
+        width: 100px;
+    }
+    .event_text{
+        font-size: 16px;
+        margin-top: 19px;
+    }
+
+
+    /* FOOTER */
+    .footer_wrap{
+        display: block;
+        margin-left: 19px;
+        padding: 46px 0 31px 0;
+    }
+
+    .footer_image{
+        margin-bottom: 35px;
+    }
+
+    .info{
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .info_text{
+        margin-bottom: 45px;
+        padding: 0;
+    }
+
+    small{
+        padding-bottom: 33px;
+    }
+
+
 }
 
 

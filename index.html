@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>デザインカフェ</title>
     <meta name="description" content="デザインカフェ近日オープン">
-    
+
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" href="css/lightbox.css">
@@ -60,25 +60,7 @@
         </div>
     </header>
 
-    <script>
-       $(function(){
-            // ハンバーガーメニュー
-            $('.sp_btn,.sp_btn li').on('click', function () {
-                $('.sp_nav').fadeToggle();
-                $('.sp_btn').toggleClass('open');
-            });
 
-            // スライダー処理
-            $('.slider').slick({
-                dots:true,
-                autoplay:true,
-                // autoplaySpeed:2000,
-                arrows:false
-
-            });
-       });
-
-    </script>
 
     <div class="pagetop">
         <a href="#header">
@@ -124,11 +106,7 @@
             </p>
        
             <p class="messeage">
-                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
-                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
+                サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。サービスを提供する上での想いや心がけていることなど、メッセージを文章で紹介します。
             </p>
         </div>
     </section>
@@ -142,22 +120,19 @@
                 <li class="explanation">
                     <img src="images/pc_menu_drink-100.jpg" alt="Drink" class="photo_3">
                     <h3 class="title">Drink</h3>
-                    <p class="introduction">ドリンクメニューの概要を100文字程度で紹介します。
-                        素材やこだわりなどをアピールしていきます。
+                    <p class="introduction">ドリンクメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
                     </p>
                 </li>
                 <li class="explanation">
                     <img src="images/pc_menu_food-100.jpg" alt="Food" class="photo_3">
                     <h3 class="title">Food</h3>
-                    <p class="introduction">フードメニューの概要を100文字程度で紹介します。
-                        素材やこだわりなどをアピールしていきます。
+                    <p class="introduction">フードメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
                     </p>
                 </li>                                    
                 <li class="explanation">
                     <img src="images/pc_menu_sweets-100.jpg" alt="Sweets" class="photo_3">
                     <h3 class="title">Sweets</h3>
-                    <p class="introduction">スイーツメニューの概要を100文字程度で紹介します。
-                        素材やこだわりなどをアピールしていきます。
+                    <p class="introduction">スイーツメニューの概要を100文字程度で紹介します。素材やこだわりなどをアピールしていきます。
                     </p>
                 </li>
             </ul>
@@ -188,36 +163,6 @@
 
     </section>
 
-    <script>
-        $('.gallery_photo').slick({
-            // ギャラリー内のスライダー処理
-            autoplay:true,
-            // 自動でスクロール
-            autoplaySpeed:0,
-            speed:5000,
-            slideToshow:4,
-            swipe:false,
-            // 操作による切り替え禁止
-            arrows:false,
-            // 矢印非表示
-            pauseOnFocus:false,
-            // スライダーにフォーカスしたときにスライド停止させるか
-            pauseOnHover:false,
-            // スライダーにマウスホバーしたときにスライド停止させるか
-            variableWidth: true,
-            // スライドの要素の幅をcssで設定できるようにする
-            infinite:true,
-            // 無限にスライドする
-    
-        });
-    </script>
-
-
-    <script>
-        lightbox.option({
-            showImageNumberLabel:false,
-        })
-    </script>
 
     <section id="event" class="event_wrap">
         <div class="event_image">
@@ -279,6 +224,58 @@
 
         </div>  
     </footer>
+
+    <script>
+        $(function(){
+
+             // ハンバーガーメニュー
+             $('.sp_btn,.sp_nav li').on('click', function () {
+                 $('.sp_nav').fadeToggle();
+                 $('.sp_btn').toggleClass('open');
+             });
+ 
+             // スライダー処理
+             $('.slider').slick({
+                 dots:true,
+                 autoplay:true,
+                 // autoplaySpeed:2000,
+                 arrows:false
+ 
+             });
+
+        // ギャラリー内のスライダー処理
+        $('.gallery_photo').slick({
+           
+            autoplay:true,
+            // 自動でスクロール
+            autoplaySpeed:0,
+            speed:5000,
+            slideToshow:4,
+            swipe:false,
+            // 操作による切り替え禁止
+            arrows:false,
+            // 矢印非表示
+            pauseOnFocus:false,
+            // スライダーにフォーカスしたときにスライド停止させるか
+            pauseOnHover:false,
+            // スライダーにマウスホバーしたときにスライド停止させるか
+            variableWidth: true,
+            // スライドの要素の幅をcssで設定できるようにする
+            infinite:true,
+            // 無限にスライドする
+    
+        }); 
+
+        // 画像拡大
+        lightbox.option({
+            showImageNumberLabel:false,
+        })
+    
+    });
+
+       
+ 
+     </script>
 
 </body>
 </html>

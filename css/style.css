@@ -65,6 +65,7 @@ body{
     left: 0;
     width: 100%;
     box-sizing: border-box;   
+    z-index: 100;
 }
 
 /* 左上designcafe白色ロゴ */
@@ -107,6 +108,7 @@ body{
     position: fixed;
     bottom: 20px;
     right: 20px;
+    z-index: 99;
 }
 
 
@@ -151,7 +153,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 90px 10px 0px 10px;
+    margin-top: 97px;
 }
 
 /*about us 画像  */
@@ -164,7 +166,7 @@ body{
     width: 43%;
 }
 /* about us 赤ロゴ */
-.logo{
+.about_2{
     width: 272px; 
 }
 
@@ -356,6 +358,7 @@ small{
 
 .info_text{
     padding-bottom: 80px;
+    line-height: 1.95;
 }
 
 /* スライダー調整 */
@@ -484,11 +487,7 @@ small{
 
 @media screen and (max-width:767px) {
 
-    /* 赤色のpagetopボタン */
-    .PAGETOP{
-        width:26.66vw;
-        /* 100/375 */
-    }
+
 
     /* ヘッダーロゴ */
     .logo{
@@ -680,6 +679,10 @@ small{
     .event_text{
         font-size: 16px;
         margin-top: 19px;
+    }
+
+    .info_detail{
+        display: block;
     }
 
 
